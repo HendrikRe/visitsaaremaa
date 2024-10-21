@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100">
+    <!-- Pilt navigatsiooni riba taga -->
+    <header class="relative">
+      
+        <div class="bg-cover bg-center h-64" style="background-image: url('https://visitsaaremaa.ee/wp-content/uploads/2023/01/3-paivaa-saarenmaallaa-2023-scaled.jpg');">
+            <nav class="flex justify-center items-center font-medium space-x-12 bg-white bg-opacity-0 p-4 group">
+                <img class="h-20 w-40 object-cover" src="https://kht.ee/images/Partnerid/VisitSaaremaa.png" alt="">
+                <div class="flex space-x-12 items-center">
+                    <a class="text-white group-hover:text-black transition-colors duration-200" href="">Planeeri</a>
+                    <a class="text-white group-hover:text-black transition-colors duration-200" href="">Avasta</a>
+                    <a class="text-white group-hover:text-black transition-colors duration-200" href="">Naudi</a>
+                    <a class="text-white group-hover:text-black transition-colors duration-200" href="">Vikingite saar</a>
+                    <a class="text-white group-hover:text-black transition-colors duration-200" href="">Info</a>
+                    <button class="font-medium inline-flex items-center text-white group-hover:text-black" type="button" data-dropdown-toggle="dropdown">EN</button>
+                    <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm">ET</span>
+                        </div>
+                        <ul class="py-1" aria-labelledby="dropdown">
+                            <li><a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">EN</a></li>
+                            <li><a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">ET</a></li>
+                            <li><a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">FI</a></li>
+                        </ul>
+                    </div>
+                    <img src="https://openweathermap.org/img/w/01d.png" alt="">
+                    <a class="text-white group-hover:text-black transition-colors duration-200">12.3</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Pildiga kaardid lehel -->
+     <br>
+     <br>
+     <br>
+     <br>
+
+     <h1 class="text-center text-3xl font-bold">Avasta Saaremaa</h1>
+
+    <div class="grid grid-cols-12 col-start-2 gap-4">
+        <div class="col-span-5 col-start-2 gap-12 relative text-center mx-auto flex justify-center overflow-hidden h-[400px] rounded-lg">
+            <img class="object-cover rounded-lg transition-transform duration-100 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2020/05/majutuse-header-scaled.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[48px]">test</p>
+            </div>
+        </div>
+
+        <div class="col-span-5 relative text-center flex justify-center overflow-hidden rounded-lg h-[400px]">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2020/05/majutuse-header-scaled.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[48px]">test</p>
+            </div>
+        </div>
+        <div class="col-span-5 col-start-2 gap-12 relative text-center mx-auto flex justify-center overflow-hidden h-[400px] rounded-lg">
+            <img class="object-cover rounded-lg transition-transform duration-100 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2020/05/majutuse-header-scaled.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[48px]">test</p>
+            </div>
+        </div>
+
+        <div class="col-span-5 relative text-center flex justify-center overflow-hidden rounded-lg h-[400px]">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2020/05/majutuse-header-scaled.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[48px]">test</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
