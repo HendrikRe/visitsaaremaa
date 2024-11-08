@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <title>VisitSaaremaa</title>
+    <style>
+        .nav-bar {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+        }
+
+        .nav-bar:hover {
+            background-color: rgba(255, 255, 255, 1);
+            color: black;
+
+        }
+
+        .nav-bar.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 1);
+            color: black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+        header {
+            position: relative;
+        }
+
+        header .bg-cover {
+            background-image: url('https://visitsaaremaa.ee/wp-content/uploads/2023/01/3-paivaa-saarenmaallaa-2023-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+
+    <header class="relative">
+        <div class="bg-cover bg-center h-64"
+            style="background-image: url('https://visitsaaremaa.ee/wp-content/uploads/2023/01/3-paivaa-saarenmaallaa-2023-scaled.jpg');">
+
+            <nav id="navbar" class="nav-bar flex justify-center items-center font-medium space-x-12 p-4 group">
+                <img class="h-20 w-40 object-cover" src="https://kht.ee/images/Partnerid/VisitSaaremaa.png" alt="">
+                <div class="flex space-x-12 items-center">
+                    <a class="text-black group-hover:text-black transition-colors duration-200" href="">Planeeri</a>
+                    <a class="text-black group-hover:text-black transition-colors duration-200" href="">Avasta</a>
+                    <a class="text-black group-hover:text-black transition-colors duration-200" href="">Naudi</a>
+                    <a class="text-black group-hover:text-black transition-colors duration-200" href="">Vikingite
+                        saar</a>
+                    <a class="text-black group-hover:text-black transition-colors duration-200" href="">Info</a>
+                    <button class="font-medium inline-flex items-center text-black group-hover:text-black" type="button"
+                        data-dropdown-toggle="dropdown">ET</button>
+                    <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                        id="dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm">ET</span>
+                        </div>
+                        <ul class="py-1" aria-labelledby="dropdown">
+                            <li><a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">EN</a></li>
+                            <li><a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">FI</a></li>
+                        </ul>
+                    </div>
+                    <img src="https://openweathermap.org/img/w/01d.png" alt="">
+                    <a class="text-black group-hover:text-black transition-colors duration-200">12.3</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <br><br><br><br>
+
+    <h1 class="text-center text-3xl font-bold">Avasta Saaremaa</h1>
+
+    <div class="grid grid-cols-12 col-start-2 gap-4 mt-8">
+        <div
+            class="col-span-5 col-start-2 gap-12 relative mx-auto flex justify-center overflow-hidden h-[400px] rounded-lg">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+                src="https://visitsaaremaa.ee/wp-content/uploads/2024/11/hanso-oige.jpg" alt="">
+        </div>
+
+        <div class="col-span-5 relative text-center flex justify-center overflow-hidden rounded-lg h-[400px] w-[550px]">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+                src="https://visitsaaremaa.ee/wp-content/uploads/2024/10/Lenda-peale-Saaremaale-scaled.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[32px]"><b>Lenda peale. Mitte üle</b></p>
+            </div>
+        </div>
+
+        <div
+            class="col-span-5 col-start-2 gap-12 relative mx-auto flex justify-center overflow-hidden h-[367px] w-[550px] rounded-lg">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+                src="https://visitsaaremaa.ee/wp-content/uploads/2024/05/N9A6631-copy-scaled.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[32px]"><b>Saarte kenad kohad</b></p>
+            </div>
+        </div>
+
+        <div class="col-span-5 relative text-center flex justify-center overflow-hidden rounded-lg h-[367px] w-[550px]">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+                src="https://visitsaaremaa.ee/wp-content/uploads/2024/11/55A8752-scaled.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[32px]"><b>Saaremaa terviseveed 200</b></p>
+            </div>
+        </div>
+
+        <div
+            class="col-span-5 col-start-2 gap-12 relative text-center mx-auto flex justify-center overflow-hidden h-[367px] rounded-lg w-[550px]">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+                src="https://visitsaaremaa.ee/wp-content/uploads/2024/02/55A6905.jpg" alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[32px]"><b>Saarte maitsed</b></p>
+            </div>
+        </div>
+
+        <div class="col-span-5 relative text-center flex justify-center overflow-hidden rounded-lg h-[367px] w-[550px]">
+            <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+                src="https://visitsaaremaa.ee/wp-content/uploads/2024/05/Folk-dancers-3-Kristina-Magi-copy-scaled.jpg"
+                alt="">
+            <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+                <p class="text-[32px]"><b>Saarte sündmused</b></p>
+            </div>
+        </div>
+
+        <div
+            class="relative col-span-10 col-start-2 text-center mx-auto flex justify-center overflow-hidden h-[400px] rounded-lg w-[1200px]">
+
+            <img class="object-cover w-full h-full rounded-lg transition-transform duration-700 transform hover:scale-125"
+                src="https://visitsaaremaa.ee/wp-content/uploads/2022/12/Liitu-visit-saaremaa-uudiskirjaga-scaled.jpg"
+                alt="">
+
+
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+
+
+            <div class="absolute inset-0 flex items-center justify-center text-white">
+                <form action="#" method="post" class="bg-black bg-opacity-0 p-6 rounded-lg text-center">
+                    <div class="mb-4">
+                        <label for="name" class="block text-white-700 font-semibold">Sinu nimi</label>
+                        <input type="text" name="name" id="name" placeholder="" class="px-4 py-2 w-full text-black mt-1"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-white-700 font-semibold">Sinu e-mail</label>
+                        <input type="email" name="email" id="email" placeholder=""
+                            class="px-4 py-2 w-full text-black mt-1" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text font-bold">
+                <button class="px-9 py-2 bg-[#EA4570] text-white hover:bg-pink-600 transition-colors">Liitu
+                    uudiskirjaga</button>
+            </div>
+
+            <div class="absolute bottom-10 left-4 text-white text-3xl font-semibold text opacity-80">
+                Liitu uudiskirjaga
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+
+        window.onscroll = function () { stickyNavbar() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickyNavbar() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <br>
+
+    <div class="px-6 sm:px-0 max-w-sm">
+        <!-- Flex konteiner keskel -->
+        <div class="flex justify-center space-x-6">
+          <!-- Facebook nupp -->
+          <button type="button" class="text-white bg-[#3b5998] font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center justify-center mb-3">
+            <svg class="mr-2 w-10 h-5" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor" d="M279.14 288l14.22-92h-88.91v-60.3c0-25.41 12.58-50.3 55.13-50.3H320V6.26S301.72 0 273.56 0C228.1 0 193.56 29.63 193.56 83.1v60.9H138v92h55.56v236h92.4V288h.04z"></path>
+            </svg>
+            <p class="text-[20px]"><b>Facebook</b></p>
+          </button>
+      
+          <!-- Instagram nupp -->
+          <button type="button" class="text-white bg-[#5851db] font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center justify-center mb-3">
+            <svg class="mr-2 w-10 h-5" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor" d="M224 41C120.9 41 41 120.9 41 224c0 103.1 79.9 183 183 183 103.1 0 183-79.9 183-183C407 120.9 327.1 41 224 41zM224 318c-51.4 0-93.9-42.5-93.9-93.9 0-51.4 42.5-93.9 93.9-93.9 51.4 0 93.9 42.5 93.9 93.9C317.9 275.5 275.4 318 224 318zM370.8 131.2c0 16.5-13.4 29.9-29.9 29.9-16.5 0-29.9-13.4-29.9-29.9 0-16.5 13.4-29.9 29.9-29.9 16.5 0 29.9 13.4 29.9 29.9z"></path>
+            </svg>
+            <p class="text-[20px]"><b>Instagram</b></p>
+          </button>
+        </div>
+      </div>
+      
+      
+
+    <footer class="bg-white-800 text-[#E1306C] py-8">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Info</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-black hover:text-[#E1306C]">Transport</a></li>
+                        <li><a href="#" class="text-black hover:text-[#E1306C]">Majutus Saaremaa</a></li>
+                        <li><a href="#" class="text-black hover:text-[#E1306C]">Meite maitsed</a></li>
+                        <li><a href="#" class="text-black hover:text-[#E1306C]">Saaremaa sündmused</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Organisatsioon</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-black hover:text-[#E1306C]">Visit Saaremaa</a></li>
+                        <li><a href="#" class="text-black hover:text-[#E1306C]">Töötajad</a></li>
+                        <li><a href="#" class="text-black hover:text-[#E1306C]">Uudiskiri turismiprofessionaalile</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Turismiinfo</h5>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-black hover:text-[#E1306C]">Tallinna 2, Kuressaare</a></li>
+                        <li><a href="" class="text-black hover:text-[#E1306C]"> +372 45 33 120</a></li>
+                        <li><a href="" class="text-black hover:text-[#E1306C]" target="_blank">
+                                info@visitsaaremaa.ee</a></li>
+                    </ul>
+                </div>
+
+            </div>
+    </footer>
+
+</body>
+</html>
